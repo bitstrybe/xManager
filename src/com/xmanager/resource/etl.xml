@@ -1,0 +1,7 @@
+<etl>
+        <connection id="db1" driver="com.mysql.jdbc.Driver" url="jdbc:mysql://localhost:3306/xmanager?zeroDateTimeBehavior=convertToNull" user="root" password="1234"/>
+        <query connection-id="db1">
+            <!-- Backup xManager Database-->
+            mysqldump xmanager > xmanagerbkp.sql            
+        </query>
+    </etl>

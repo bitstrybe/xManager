@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="5e8b8645-8d28-4bdf-9b87-eae40228d982">
+	<property name="ireport.zoom" value="1.5"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<field name="COLUMN_0" class="java.lang.String"/>
+	<field name="COLUMN_1" class="java.lang.String"/>
+	<field name="COLUMN_2" class="java.lang.String"/>
+	<group name="Bycategory">
+		<groupExpression><![CDATA[$F{COLUMN_2}]]></groupExpression>
+		<groupHeader>
+			<band height="11"/>
+		</groupHeader>
+		<groupFooter>
+			<band height="17"/>
+		</groupFooter>
+	</group>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="76" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="44f9b0ce-0ad5-4aa4-b5eb-db457f705d93" x="62" y="6" width="432" height="35" forecolor="#000000"/>
+				<textElement textAlignment="Center">
+					<font size="26"/>
+				</textElement>
+				<text><![CDATA[HAN-HABIS ENTERPRISE]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="a3262a1e-fb08-442d-965e-b221849aa40f" x="62" y="41" width="432" height="31"/>
+				<textElement textAlignment="Center" verticalAlignment="Middle">
+					<font size="18" isBold="false"/>
+				</textElement>
+				<text><![CDATA[PRODUCT LIST]]></text>
+			</staticText>
+		</band>
+	</title>
+	<columnHeader>
+		<band height="34" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="779f15cb-1e35-44d3-b749-f84b60577792" x="230" y="13" width="303" height="20"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Name]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b47eb69-3ca2-4282-9be2-f4da955ff39c" x="6" y="14" width="110" height="18"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Item Code:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="6b47eb69-3ca2-4282-9be2-f4da955ff39c" x="116" y="14" width="110" height="19"/>
+				<textElement verticalAlignment="Bottom">
+					<font size="11" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Category Type]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="18" splitType="Stretch">
+			<textField>
+				<reportElement uuid="5c95801e-1108-4f83-af64-5ab3fa6042c1" x="0" y="1" width="116" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_0}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement uuid="defe7b3d-0dde-415c-a1b6-79c24dea7468" x="230" y="1" width="279" height="15"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_1}]]></textFieldExpression>
+			</textField>
+			<line>
+				<reportElement uuid="d0f1aff6-138d-4dc1-8488-b22526f0e128" x="0" y="16" width="555" height="1" forecolor="#666666"/>
+			</line>
+			<textField>
+				<reportElement uuid="89f8464c-f4fb-4d35-851e-4627aea59d90" isPrintRepeatedValues="false" x="117" y="0" width="110" height="15" printWhenGroupChanges="Bycategory"/>
+				<textElement verticalAlignment="Middle">
+					<font size="8"/>
+				</textElement>
+				<textFieldExpression><![CDATA[$F{COLUMN_2}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<pageFooter>
+		<band height="29" splitType="Stretch">
+			<staticText>
+				<reportElement uuid="30b1e624-08fc-48f1-9ca7-d5558c9d4a22" x="2" y="12" width="80" height="15"/>
+				<textElement textAlignment="Right" verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[powered by Lxe ]]></text>
+			</staticText>
+			<staticText>
+				<reportElement uuid="f7f6b445-8afc-47db-ab37-0484a2ed118a" x="82" y="12" width="188" height="15" forecolor="#0099FF"/>
+				<textElement textAlignment="Center" verticalAlignment="Bottom">
+					<font size="8" isItalic="true"/>
+				</textElement>
+				<text><![CDATA[www.lxeonline.net]]></text>
+			</staticText>
+		</band>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

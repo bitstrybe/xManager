@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="xManagerPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>com.xmanager.entity.Expenditures</class>
+    <class>com.xmanager.entity.Stockout</class>
+    <class>com.xmanager.entity.Accounts</class>
+    <class>com.xmanager.entity.Creditors</class>
+    <class>com.xmanager.entity.Bank</class>
+    <class>com.xmanager.entity.BankEntry</class>
+    <class>com.xmanager.entity.Stockin</class>
+    <class>com.xmanager.entity.Destination</class>
+    <class>com.xmanager.entity.Sales</class>
+    <class>com.xmanager.entity.Users</class>
+    <class>com.xmanager.entity.Item</class>
+    <class>com.xmanager.entity.Debtors</class>
+    <class>com.xmanager.entity.Logs</class>
+    <class>com.xmanager.entity.Shops</class>
+    <class>com.xmanager.entity.GeneralLedger</class>
+    <class>com.xmanager.entity.Category</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://localhost:3306/xmanager1?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="root"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="1234"/>
+    </properties>
+  </persistence-unit>
+</persistence>
